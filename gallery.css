@@ -1,0 +1,36 @@
+.gallery {
+  height: 92vh;
+  background: radial-gradient(#5b7742, #2b411c);
+  background-size: cover;
+  overflow-x: hidden;
+  color: #edeee9;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+@media screen and (max-width: 50em) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 37.5em) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}

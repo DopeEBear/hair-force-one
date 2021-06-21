@@ -1,0 +1,269 @@
+*,
+html,
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+body {
+  background: radial-gradient(#5b7742, #2b411c);
+}
+ul {
+  list-style: none;
+}
+li a {
+  text-decoration: none;
+}
+.main {
+  color: #edeee9;
+  height: 92vh;
+  background-image: linear-gradient(
+      to bottom right,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url('/imgs/barber-shop-nading-page.jpg');
+  background-size: cover;
+  overflow-x: hidden;
+}
+@media only screen and (max-width: 43.75em) {
+  main {
+    height: 94vh;
+  }
+}
+@media only screen and (max-width: 18.75em) {
+  main {
+    height: 94vh;
+    background-size: fit;
+  }
+}
+
+/* Navigation */
+.nav {
+  background: radial-gradient(#5b7742, #2b411c);
+  height: 8vh;
+  width: 99.4vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+}
+.logo__container {
+  height: 100%;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.logo a {
+  color: #edeee9;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 3rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-left: 2rem;
+}
+.links {
+  display: flex;
+  height: 100%;
+  text-align: center;
+}
+
+.link {
+  height: 100%;
+  transition: all 0.3s;
+}
+.link:hover {
+  transform: scale(1.1);
+  background: radial-gradient(#5b7742, #2b411c);
+  border: 2px solid #5b7742;
+}
+.link:active {
+  transform: scale(1);
+}
+.link a {
+  display: flex;
+  align-items: center;
+  color: #edeee9;
+  font-size: 1.5rem;
+  margin: 0 2rem;
+  height: 100%;
+}
+.link-active {
+  background: radial-gradient(#5b7742, #2b411c);
+  border: 2px solid #5b7742;
+  height: 100%;
+  display: flex;
+  transition: transform 0.3s;
+}
+.link-active:hover {
+  transform: scale(1.05);
+}
+.link-active:active {
+  transform: scale(1);
+}
+.link-active a {
+  display: flex;
+  align-items: center;
+  color: #edeee9;
+  font-size: 1.5rem;
+  margin: 0 2rem;
+  height: 100%;
+}
+@media only screen and (max-width: 43.75em) {
+  .nav {
+    height: 6vh;
+  }
+  .logo {
+    font-size: 2rem;
+  }
+  .link a {
+    font-size: 1rem;
+    margin: 0 1rem;
+  }
+  .link-active a {
+    font-size: 1rem;
+    margin: 0 1rem;
+  }
+}
+@media only screen and (max-width: 28.125em) {
+  .nav {
+    padding: 0;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
+  .link a {
+    font-size: 0.75rem;
+    margin: 0 0.75rem;
+  }
+  .link-active a {
+    font-size: 0.75rem;
+    margin: 0 0.75rem;
+  }
+}
+
+/* Hero Section */
+.hero-page {
+  align-items: center;
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.heading {
+  font-weight: 200;
+  width: 100%;
+  min-width: 30rem;
+  max-width: 95rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 9rem;
+}
+.heading span {
+  font-family: cursive;
+  font-size: 10rem;
+}
+.appointment-btn {
+  padding: 2rem 5rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 10rem;
+  background: radial-gradient(#5b7742, #2b411c);
+  color: #edeee9;
+  border: 0.3rem solid #5b7742;
+  border-radius: 2rem;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.appointment-btn:hover {
+  transform: scale(1.1);
+}
+.appointment-btn:active {
+  transform: scale(1);
+}
+@media only screen and (max-width: 43.75em) {
+  .hero-page {
+    height: 87vh;
+  }
+  .heading {
+    font-size: 6rem;
+  }
+  .heading span {
+    font-size: 7rem;
+  }
+  .appointment-btn {
+    padding: 1.5rem 4rem;
+    font-size: 1.75rem;
+  }
+}
+@media only screen and (max-width: 28.125em) {
+  .heading {
+    font-size: 5rem;
+  }
+  .heading span {
+    font-size: 6rem;
+  }
+  .appointment-btn {
+    padding: 1.25rem 3rem;
+    font-size: 1.5rem;
+  }
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer p {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 2rem;
+  max-width: 30rem;
+  color: #edeee9;
+}
+.social-links {
+  display: flex;
+  margin: 0 2rem;
+}
+.social-links li a {
+  color: #edeee9;
+  font-size: 2rem;
+  margin: 0 1rem;
+}
+
+.fa-facebook-messenger:hover {
+  color: #00c6ff;
+}
+.fa-instagram:hover {
+  color: #c32aa3;
+}
+
+.fa-twitter:hover {
+  color: #00acee;
+}
+.fa-yelp:hover {
+  color: #c41200;
+}
+@media only screen and (max-width: 43.75em) {
+  .social-links li a {
+    font-size: 1.75rem;
+  }
+}
+@media only screen and (max-width: 28.125em) {
+  .footer p {
+    font-size: 0.8rem;
+  }
+  .social-links li a {
+    font-size: 1rem;
+    margin: 0 0.5rem;
+  }
+}
