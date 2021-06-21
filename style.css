@@ -29,12 +29,12 @@ li a {
   overflow-x: hidden;
 }
 @media only screen and (max-width: 43.75em) {
-  main {
+  .main {
     height: 94vh;
   }
 }
 @media only screen and (max-width: 18.75em) {
-  main {
+  .main {
     height: 94vh;
     background-size: fit;
   }
@@ -116,7 +116,7 @@ li a {
   .nav {
     height: 6vh;
   }
-  .logo {
+  .logo a {
     font-size: 2rem;
   }
   .link a {
@@ -132,7 +132,7 @@ li a {
   .nav {
     padding: 0;
   }
-  .logo {
+  .logo a {
     font-size: 1.5rem;
   }
   .link a {

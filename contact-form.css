@@ -31,6 +31,11 @@
 .contact-section {
   width: 20rem;
 }
+iframe {
+  border: 0; 
+  width: 100%; 
+  height: 39rem;
+}
 input {
   font-size: 1.5rem;
   width: 20rem;
@@ -68,10 +73,42 @@ textarea:focus {
   transform: scale(1);
 }
 @media only screen and (max-width: 39.5em) {
+  .section-title {
+    font-size: 2rem;
+    margin: 1rem;
+  }
+  .address {
+    font-size: 1.75rem;
+  }
   .container {
     margin: 5rem 0;
   }
   .contact-section {
     margin-top: 2rem;
   }
+  iframe {
+    height: 30rem;
+  }
+  input {
+    font-size: 1.2rem;
+    width: 20rem;
+    margin: 0.25rem 0;
+  }
+  textarea {
+    font-size: 1.2rem;
+    height: 10rem;
+    width: 18rem;
+    margin: 0.25rem 0;
+  }
+  .send-btn {
+    padding: 1.25rem 2.5rem;
+    font-size: 1.3rem;
+    
+  }
+}
+@media only screen and (max-width: 24.75em) {
+iframe {
+  width: 25rem;
+  height: 20rem;
+}
 }
